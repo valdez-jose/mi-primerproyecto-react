@@ -1,6 +1,6 @@
 
 import '../css/Footer.css'
-import {compu2, casa, linkedin, portafolio2, compu1, github, twitter, contacto1 } from '../assets/imagenes.js'
+import {compu2, casa, linkedin, portafolio2, github, twitter, contacto1 } from '../assets/imagenes.js'
 
 
 const Footer = () => {
@@ -8,17 +8,17 @@ const Footer = () => {
     <>
         <footer className="footer">
         <div className="footer-logo">
-          <img src={compu2} alt="" />
+          <img src={compu2} alt="imagen de computadora" />
           <p>Soy José</p>
         </div>
 
         <nav className="footer-nav">
           <a href="#" className="item-inline">
-            <img src={casa} alt="" />
+            <img src={casa} alt="imagen de casa" />
             <span>Home</span>
           </a>
           <a href="#" className="item-inline">
-            <img src={portafolio2} alt="" />
+            <img src={portafolio2} alt="imagen de portafolio" />
             <span>Servicios</span>
           </a>
           <a href="#" className="item-inline">

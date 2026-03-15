@@ -1,58 +1,60 @@
 
 .seccion-container {
   background-color: rgb(5, 36, 36);
-  height: 350px;
+  /* CAMBIO: min-height en vez de height fijo */
+  min-height: 350px; 
   width: 100%;
-  display: inline-flex;
-  padding: 1rem;
+  display: flex; /* CAMBIO: flex normal */
+  padding: 2rem; /* Un poco más de aire */
+  box-sizing: border-box; /* Para que el padding no sume al ancho total */
 }
- .titulo2{
-  width: 50%;
+
+.titulo2 {
+  width: 50%; /* Ajustado para que sume 100 con el otro */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start; /* Mejor alineado a la izquierda para párrafos */
   justify-content: center;
- }
-.titulo2 > h2{
-  font-size: 3rem;
-  color:white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
- .logo2{
-  width: 60%;
+
+.titulo2 > p {
+  font-size: 1.2rem;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.6; /* Mejora mucho la lectura de textos largos */
+  margin-top: 1rem;
+}
+
+.logo2 {
+  width: 50%; /* Ajustado */
   display: flex;
   align-items: center;
-  
- }
- .logo2 > img{
-  width: 350px;
+  justify-content: center; /* Centra la imagen en su mitad */
+}
+
+.logo2 > img {
+  max-width: 100%; /* Evita que la imagen se salga de su contenedor */
+  width: 400px;
   height: auto;
-  margin-left: 2rem;
   border-radius: 7%;
- }
+}
 
- 
- @media (max-width: 768px) {
-   .seccion-container {
-    flex-direction: column;  
-    align-items: center;  
-    justify-content: center;       
+/* Responsivo */
+@media (max-width: 768px) {
+  .seccion-container {
+    flex-direction: column;
+    height: auto; /* Que el alto sea libre en móviles */
+    padding: 3rem 1rem;
   }
 
-  .titulo2 {
-    width: 90%;
-  }
-  .logo2{
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-    
+  .titulo2, .logo2 {
+    width: 100%; /* Ocupan todo el ancho en móvil */
+    text-align: center;
+    align-items: center;
   }
 
   .logo2 > img {
-    width: 250px; 
-           
+    margin-left: 0; /* Quitamos el margen lateral en móvil */
+    width: 250px;
   }
 }
- 

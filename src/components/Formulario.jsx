@@ -6,7 +6,7 @@ const Formulario = () => {
   return (
     <>
       <div className='container'>
-       <div class="title-box">
+       <div className="title-box">
           <h2>Escríbeme</h2>
         </div>
 

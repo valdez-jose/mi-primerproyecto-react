@@ -8,7 +8,9 @@ const Seccion = () => {
        <section class="seccion-container">
 
       <div className="titulo2">
-           <h2>Soy Jose</h2>
+           <h2>José</h2>
+            <p>Desarrollador Full Stack en formación, enfocado en JavaScript para la creación de aplicaciones 
+              web modernas utilizando tecnologías como React y herramientas actuales del ecosistema. </p>
       </div>
       
       <div className="logo2">

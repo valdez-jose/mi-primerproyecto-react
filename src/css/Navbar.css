@@ -23,7 +23,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.contenedor-logo > p{
+.contenedor-logo p{
   margin: 0;
 }
 
